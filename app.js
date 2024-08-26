@@ -72,5 +72,32 @@
             
         }
     }
+
+    let firstName= document.getElementById("fName");
+    let fnameInfo="";
+    let signUpButton= document.getElementById("submitButton")
+    
+    //THIS SECTION OF CODE WILL WATCH FOR ANY CHANGE MADE IN THE INPUT BOX
+    // firstName.addEventListener("input", () => {
+    //     fnameInfo=firstName.value
+    //     console.log(fnameInfo);
+    // })
+
+    signUpButton.addEventListener("click", () => {
+        if(firstName.value){
+            confirm("can't submit empty value")
+        }else{
+            fnameInfo=firstName.value;
+            console.log(fnameInfo)
+
+        }
+
+    })
+
+
+
+
+
+
 //#endregion
 
